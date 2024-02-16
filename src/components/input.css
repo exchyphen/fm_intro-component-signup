@@ -1,0 +1,54 @@
+.error-container {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    position: relative;
+}
+
+
+input {
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.input-error-state {
+    border: 2px solid var(--red);
+}
+
+.error-icon {
+    width: 2rem;
+    height: 40px;
+    background: url("../assets/images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 3px;
+    right: 20px;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--red);
+}
+
+@media screen and (max-width: 900px) {
+    .error-message {
+        font-size: 0.6rem;
+    }
+
+    .error-icon {
+        top: 5px;
+    }
+}
